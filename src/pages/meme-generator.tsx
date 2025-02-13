@@ -1,5 +1,6 @@
 import { styled } from "@mui/system";
 import { Typography } from "@mui/material";
+import ContentBackground from "../components/content-background";
 
 const ContentContainer = styled('div')({
   width: '100%',

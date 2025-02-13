@@ -4,7 +4,7 @@ import theme from "./theme";
 import LandingPage from './pages/landing-page';
 import MemeGenerator from './pages/meme-generator';
 import RoadMap from './pages/road-map';
-import WojoUtilities from './pages/wojo-utilites';
+import WojoUtilities from './pages/wojo-utilities';
 import MemeGallery from './pages/meme-gallery';
 
 const App = () => {
