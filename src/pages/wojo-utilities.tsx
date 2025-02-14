@@ -10,7 +10,7 @@ const UtilitiesContainer = styled('div')({
   width: '100%',
   height: '100vh',
   position: 'relative',
-  backgroundImage: `linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.65) 67.9%), url('/src/assets/utility.jpg')`,
+  backgroundImage: `linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.65) 67.9%), url('/utility.jpg')`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
   backgroundSize: 'cover',

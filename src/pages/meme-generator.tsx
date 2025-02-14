@@ -10,7 +10,7 @@ const ContentContainer = styled('div')({
   width: '100%',
   height: '100vh',
   position: 'relative',
-  backgroundImage: `linear-gradient(0deg, rgba(217, 217, 217, 0) -39%, #000000 64.36%), url('/src/assets/meme-generator.jpg')`,
+  backgroundImage: `linear-gradient(0deg, rgba(217, 217, 217, 0) -39%, #000000 64.36%), url('/meme-generator.jpg')`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
   backgroundSize: 'cover',

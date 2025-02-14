@@ -52,11 +52,11 @@ export default {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'landing': "url('/src/assets/landing.jpg')",
-        'meme-gallery': "url('/src/assets/meme-gallery.jpg')",
-        'meme-generator': "url('/src/assets/meme-generator.jpg')",
-        'road-map': "url('/src/assets/road-map.jpg')",
-        'utility': "url('/src/assets/utility.jpg')",
+        'landing': "url('/landing.jpg')",
+        'meme-gallery': "url('/meme-gallery.jpg')",
+        'meme-generator': "url('/meme-generator.jpg')",
+        'road-map': "url('/road-map.jpg')",
+        'utility': "url('/utility.jpg')",
       }
     }
   },

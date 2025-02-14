@@ -57,7 +57,7 @@ const WojoUtility = () => {
         <Description>A unique AI image model specifically trained for Wojo which will also work as a meme generator, and pump more content into Wojo’s ecosystem</Description>
       </ContentContainer>
       <button>
-        <img src="/src/icons/next.png"/>
+        <img src="/icons/next.png"/>
       </button>
     </UtilityContainer>
   )

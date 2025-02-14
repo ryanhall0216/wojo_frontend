@@ -6,41 +6,41 @@ const buttonValues = [
   {
     text: <span>MEME <br/> GENERATOR</span>,
     link: "/meme-generator",
-    icon: "/src/icons/meme-generator-icon.png",
+    icon: "/icons/meme-generator-icon.png",
   },
   {
     text: <span>WOJO <br/> ROADMAP</span>,
     link: "/wojo-roadmap",
-    icon: "/src/icons/wojo-roadmap-icon.png",
+    icon: "/icons/wojo-roadmap-icon.png",
   },
   {
     text: <span>WOJO <br/> UTILITIES</span>,
     link: "/wojo-utilities",
-    icon:  "/src/icons/wojo-utilities-icon.png",
+    icon:  "/icons/wojo-utilities-icon.png",
   },
   {
     text: <span>MEME <br/> GALLERY</span>,
     link: "/meme-gallery",
-    icon: "/src/icons/meme-gallery-icon.png",
+    icon: "/icons/meme-gallery-icon.png",
   }
 ];
 
 const socialLinks = [
   {
     link: "/",
-    icon: "/src/icons/twitter.png",
+    icon: "/icons/twitter.png",
   },
   {
     link: "/",
-    icon: "/src/icons/telegram.png",
+    icon: "/icons/telegram.png",
   },
   {
     link: "/",
-    icon: "/src/icons/music.png",
+    icon: "/icons/music.png",
   },
   {
     link: "/",
-    icon: "/src/icons/camera.png",
+    icon: "/icons/camera.png",
   },
 ]
 
@@ -94,7 +94,7 @@ const VideoBackground = styled('div')({
   position: "relative",
   width: "100%",
   height: "100vh",
-  background: "url('/src/assets/banner.mp4') no-repeat center center",
+  background: "url('/banner.mp4') no-repeat center center",
   backgroundSize: "cover",
   overflow: "hidden",
   zIndex: -1,
@@ -114,11 +114,11 @@ const LandingPage = () => {
     // <div className="bg-landing w-full h-screen bg-[length:100%_100%] bg-center bg-no-repeat">
     <div>
       <VideoBackground>
-        <video autoPlay muted loop preload="auto">
-          <source src="/src/assets/banner.mp4" type="video/mp4" />
+        <video autoPlay muted loop preload="auto" poster="/banner-placeholder.jpg">
+          <source src="/banner.mp4" type="video/mp4" />
         </video>
       </VideoBackground>
-      <PaperIcon src="/src/icons/paper-icon.png"></PaperIcon>
+      <PaperIcon src="/icons/paper-icon.png"></PaperIcon>
       <ButtonGroup>
         {
           buttonValues && buttonValues.map((item, index) => {

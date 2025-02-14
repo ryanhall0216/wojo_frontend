@@ -6,11 +6,11 @@ import WojoGalleryItem from "./wojo-gallery-item"
 import { styled } from "@mui/system";
 
 const galleryValues = [
-  "/src/assets/gallery/gallery1.png",
-  "/src/assets/gallery/gallery2.png",
-  "/src/assets/gallery/gallery3.png",
-  "/src/assets/gallery/gallery4.png",
-  "/src/assets/gallery/gallery5.png",
+  "/gallery/gallery1.png",
+  "/gallery/gallery2.png",
+  "/gallery/gallery3.png",
+  "/gallery/gallery4.png",
+  "/gallery/gallery5.png",
 ]
 
 const sliderSettings = {
@@ -47,10 +47,10 @@ const WojoGalleryContainer = () => {
       </Slider>
       <ButtonGroups>
         <button onClick={() => sliderRef.current?.slickPrev()}>
-          <img src="/src/icons/prev.png" width={140} height={60}/>
+          <img src="/icons/prev.png" width={140} height={60}/>
         </button>
         <button onClick={() => sliderRef.current?.slickNext()}>
-          <img src="/src/icons/next.png" width={140} height={60}/>
+          <img src="/icons/next.png" width={140} height={60}/>
         </button>
       </ButtonGroups>
     </div>
