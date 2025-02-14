@@ -63,7 +63,7 @@ const RoadMapCard = ({card, key}: {card: CardProps, key: number}) => {
         <SubTitle>{card.subtitle}</SubTitle>
         <Description>{card.description}</Description>
         <button>
-          <img src="/src/icons/lock.png"/>
+          <img src="/icons/lock.png"/>
         </button>
       </CardContent>
     </CardContainer>

@@ -45,7 +45,7 @@ const GenerateField = () => {
         <InputField placeholder="TYPE A PROMPT..."/>
         <GenerateButton>
           GENERATE
-          <img src="/src/icons/magic.png"/>
+          <img src="/icons/magic.png"/>
         </GenerateButton>
       </GenerateFieldContainer>
   );
