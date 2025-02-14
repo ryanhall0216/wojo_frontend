@@ -7,7 +7,8 @@ const GalleryItemContainer = styled('div')({
   borderRadius: "10.86px",
   boxShadow: "5px 7px #000000",
   padding: "27px 22px",
-  backgroundColor: "#FFDB1F"
+  backgroundColor: "#FFDB1F",
+  margin: "0 15px"
 });
 
 const GalleryItem = styled('div')({
