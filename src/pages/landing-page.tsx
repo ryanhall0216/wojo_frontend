@@ -1,6 +1,5 @@
-import React from "react";
 import { styled } from "@mui/system";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const buttonValues = [

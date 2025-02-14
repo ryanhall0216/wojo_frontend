@@ -1,6 +1,4 @@
 import { styled } from "@mui/system";
-import { Typography } from "@mui/material";
-
 
 const GalleryItemContainer = styled('div')({
   border: "1px solid #000000",
