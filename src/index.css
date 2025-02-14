@@ -20,3 +20,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Shrimp";
+    src: url('assets/fonts/shrimp/Shrimp.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

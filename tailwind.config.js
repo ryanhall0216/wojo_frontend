@@ -32,7 +32,8 @@ export default {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
       retro: ['Retro Kraft'],
-      articulat: ['Articulat CF']
+      articulat: ['Articulat CF'],
+      shrimp: ['Shrimp'],
     },
     opacity: {
       '0': '0',
@@ -51,11 +52,11 @@ export default {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'landing': "url('/src/assets/landing.png')",
-        'meme-gallery': "url('/src/assets/meme-gallery.png')",
-        'meme-generator': "url('/src/assets/meme-generator.png')",
-        'road-map': "url('/src/assets/road-map.png')",
-        'utility': "url('/src/assets/utility.png')",
+        'landing': "url('/src/assets/landing.jpg')",
+        'meme-gallery': "url('/src/assets/meme-gallery.jpg')",
+        'meme-generator': "url('/src/assets/meme-generator.jpg')",
+        'road-map': "url('/src/assets/road-map.jpg')",
+        'utility': "url('/src/assets/utility.jpg')",
       }
     }
   },

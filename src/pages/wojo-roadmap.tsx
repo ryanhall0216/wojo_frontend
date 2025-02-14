@@ -1,8 +1,7 @@
-// import WindowButtonGroup from "../components/window-button-group";
+import WindowButtonGroup from "../components/window-button-group";
 import { styled } from "@mui/system";
 import { Typography } from "@mui/material";
-import WojoGalleryContainer from "../components/wojo-gallery/wojo-gallery-container";
-import WindowButtonGroup from "../components/window-button-group";
+import RoadMapCardsContainer from "../components/roadmap-cards/roadmap-cards-container";
 
 const Title = styled(Typography)({
   fontFamily: "Retro Kraft",
@@ -11,19 +10,19 @@ const Title = styled(Typography)({
   lineWeight: '88.68px',
   letterSpacing: '-2%',
   textShadow: '5px 7px 0px rgb(0, 0, 0)',
-  color: '#C21FA0',
+  color: 'white',
   paddingTop: "40px",
   textAlign: "left"
 });
 
-const MemeGallery = () => {
+const WojoRoadMap = () => {
   return (
     <div className="bg-road-map h-screen bg-cover bg-center px-[170px] py-[30px]">
       <WindowButtonGroup />
-      <Title>WOJO GALLERY</Title>
-      <WojoGalleryContainer />
+      <Title>WOJO ROADMAP</Title>
+      <RoadMapCardsContainer />
     </div>
   );
 }
 
-export default MemeGallery;
+export default WojoRoadMap;

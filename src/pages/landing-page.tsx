@@ -3,7 +3,7 @@ import { styled } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const ButtonValues = [
+const buttonValues = [
   {
     text: <span>MEME <br/> GENERATOR</span>,
     link: "/meme-generator",
@@ -26,7 +26,7 @@ const ButtonValues = [
   }
 ];
 
-const SocialLinkValues = [
+const socialLinks = [
   {
     link: "/",
     icon: "/src/icons/twitter.png",
@@ -50,7 +50,7 @@ const ButtonGroup = styled('div')({
   display: "flex",
   gap: "59px",
   top: "270px",
-  left: "640px"
+  left: "500px"
 })
 
 const ButtonText = styled(Typography)({
@@ -67,10 +67,10 @@ const ButtonText = styled(Typography)({
 
 const PaperIcon = styled('img')({
   position: 'absolute',
-  width: "183px",
-  height: "183px",
-  top: "30px",
-  right: "70px",
+  width: "150px",
+  height: "150px",
+  top: "60px",
+  right: "290px",
   opacity: "0.9"
 })
 
@@ -79,8 +79,8 @@ const SocialLinks = styled('div')({
   position: "absolute",
   width: '354px',
   height: '92px',
-  top: '530px',
-  left: '817px',
+  top: '520px',
+  left: '675px',
   borderWidth: '2px',
   padding: "21px 34px",
   gap: "28px",
@@ -91,13 +91,38 @@ const SocialLinks = styled('div')({
   // borderImage: "linear-gradient(132.62deg, #FF00CC 2.21%, #8900FB 99.93%)"
 });
 
-const LandingPage: React.FC = () => {
+const VideoBackground = styled('div')({
+  position: "relative",
+  width: "100%",
+  height: "100vh",
+  background: "url('/src/assets/banner.mp4') no-repeat center center",
+  backgroundSize: "cover",
+  overflow: "hidden",
+  zIndex: -1,
+  "& video": {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    zIndex: -1,
+  }
+});
+
+const LandingPage = () => {
   return (
-    <div className="bg-landing w-full h-screen bg-[length:100%_100%] bg-center bg-no-repeat">
+    // <div className="bg-landing w-full h-screen bg-[length:100%_100%] bg-center bg-no-repeat">
+    <div>
+      <VideoBackground>
+        <video autoPlay muted loop preload="auto">
+          <source src="/src/assets/banner.mp4" type="video/mp4" />
+        </video>
+      </VideoBackground>
       <PaperIcon src="/src/icons/paper-icon.png"></PaperIcon>
       <ButtonGroup>
         {
-          ButtonValues && ButtonValues.map((item, index) => {
+          buttonValues && buttonValues.map((item, index) => {
             return (
               <Link to={item.link} key={index}>
                 <div className="flex flex-col items-center">
@@ -111,14 +136,14 @@ const LandingPage: React.FC = () => {
       </ButtonGroup>
       <SocialLinks>
         {
-          SocialLinkValues && SocialLinkValues.map((item, index) => {
+          socialLinks && socialLinks.map((item, index) => {
             return (
               <Link to={item.link} key={index} className="flex flex-col items-center">
                 <img 
                   src={item.icon} 
                   style={{ 
-                    width: "51", 
-                    height: "51", 
+                    width:"51", 
+                    height:"51", 
                     // boxShadow: "2px 3px 1px 0px #C21EA1"
                   }}
                 ></img>
